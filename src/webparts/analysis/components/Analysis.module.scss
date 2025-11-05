@@ -1,0 +1,230 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.analysis {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+
+/* Default style for larger screens */
+.pdf-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 107%;
+  pointer-events: auto;
+  margin-left: 19px;
+
+  overflow: hidden;
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE 10+ */
+  
+}
+/* Below 500px: increase height to prevent scrollbars */
+@media (max-width: 500px) {
+  .pdf-frame {
+    height: 135%;
+    margin-left: 12px;
+  }
+}
+
+/* Below 400px: more height + tighter margin */
+@media (max-width: 400px) {
+  .pdf-frame {
+    height: 145%;
+    margin-left: 8px;
+  }
+}
+// /* 🖥 Small laptops and large tablets */
+// @media (max-width: 1024px) {
+//   .pdf-frame {
+//     height: 112%;
+//     margin-left: 10px;
+//   }
+// }
+
+/* 📱 Tablets and small screens */
+// @media (max-width: 768px) {
+//   .pdf-frame {
+//     height: 130%;
+//     margin-left: 12px;
+//   }
+// }
+
+// /* 📲 Mobile phones (typical breakpoint) */
+// @media (max-width: 425px) {
+//   .pdf-frame {
+//     height: 132%;
+//     margin-left: 20px;
+//   }
+// }
+
+// /* 📱 Smaller phones (iPhone SE, etc.) */
+// @media (max-width: 375px) {
+//   .pdf-frame {
+//     height: 138%;
+//     margin-left: 24px;
+//   }
+// }
+
+// /* 📟 Ultra-small devices */
+// @media (max-width: 320px) {
+//   .pdf-frame {
+//     height: 139%;
+//     margin-left: 28px;
+//   }
+// }
+
+
+
+.analysis {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videoDetails {
+  margin-top: 20px;
+}
+
+.videoTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.videoDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.videoMetadata {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.views, .likes, .dislikes {
+  margin-right: 10px;
+}
+
+.suggestedVideos {
+  margin-top: 20px;
+}
+
+.suggestedVideos h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.suggestedVideos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.suggestedVideos li {
+  margin-bottom: 10px;
+}
+
+.suggestedVideos li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  display: block;
+}
+
+.suggestedVideos li a:hover {
+  color: #666;
+}
+
+.analysis {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainContent {
+  flex-grow: 1;
+}
+
+.videoContainer {
+  width: 560px; /* Adjust as needed */
+  height: 315px; /* Adjust as needed */
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.suggestedVideos {
+  width: 250px; /* Adjust as needed */
+}
+
+.suggestedVideos h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.suggestedVideos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.suggestedVideos li {
+  margin-bottom: 10px;
+}
+
+.suggestedVideos li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.suggestedVideos li a:hover {
+  color: #666;
+}
+
+
