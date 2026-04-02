@@ -46,7 +46,7 @@ export default class Analysis extends React.Component<IAnalysisProps, INewsCarou
     };
   }
   
-
+  // Custom Next Arrow component for the slider
   public SampleNextArrow = (props: any) => {
     const { onClick } = props;
     return (

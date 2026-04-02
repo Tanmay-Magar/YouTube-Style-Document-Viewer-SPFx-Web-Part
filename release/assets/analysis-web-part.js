@@ -11990,6 +11990,7 @@ var Analysis = /** @class */ (function (_super) {
         var _this = _super.call(this, props) || this;
         _this.services = new _Service_Service__WEBPACK_IMPORTED_MODULE_1__[/* SPService2 */ "a"](_this.props.context);
         _this.canvasRef = react__WEBPACK_IMPORTED_MODULE_0__["createRef"]();
+        // Custom Next Arrow component for the slider
         _this.SampleNextArrow = function (props) {
             var onClick = props.onClick;
             return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { style: {
